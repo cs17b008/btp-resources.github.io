@@ -1315,7 +1315,7 @@ __ATINIT__.push({
 		__GLOBAL__sub_I_iostream_cpp()
 	})
 });
-memoryInitializer = "../static/scripts/example.js.mem";
+memoryInitializer = "https://cs17b008.github.io/btp-resources.github.io/static/scripts/example.js.mem";
 var tempDoublePtr = Runtime.alignMemory(allocate(12, "i8", ALLOC_STATIC), 8);
 assert(tempDoublePtr % 8 == 0);
 

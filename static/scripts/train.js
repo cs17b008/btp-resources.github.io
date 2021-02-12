@@ -5,7 +5,7 @@ function build_model(){
    document.getElementById('build_model_button').style.display = 'inline-block'
     $.ajax({
           type: "POST",
-          url: "/annotator/train",
+          url: "https://services.iittp.ac.in/annotator/train",
           data: annotation_text,
           contentType: "text/xml",
           dataType: "text",

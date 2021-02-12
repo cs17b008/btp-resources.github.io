@@ -50,7 +50,7 @@ function IsCreator(u) {
 
 
 function WriteLogMsg(msg) {
-  var url = '../static/perl/write_logfile.cgi';
+  var url = 'https://cs17b008.github.io/btp-resources.github.io/static/perl/write_logfile.cgi';
   var req_submit;
   // branch for native XMLHttpRequest object
   if (window.XMLHttpRequest) {

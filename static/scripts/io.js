@@ -3,7 +3,7 @@
 function ReadXML(xml_file,SuccessFunction,ErrorFunction) {
   $.ajax({
     type: "GET",
-    url: "/annotator/"+xml_file,
+    url: "https://services.iittp.ac.in/annotator/"+xml_file,
     dataType: "xml",
     success: SuccessFunction,
     error: ErrorFunction
@@ -21,7 +21,7 @@ function WriteXML(url,xml_data,SuccessFunction,ErrorFunction) {
                         
     $.ajax({
     type: "POST",
-    url: "/annotator/"+url,
+    url: "https://services.iittp.ac.in/annotator/"+url,
     data: sXmlString,
     contentType: "text/xml",
     dataType: "text",

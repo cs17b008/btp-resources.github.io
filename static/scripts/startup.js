@@ -71,7 +71,7 @@ function StartupLabelMe() {
   else {
     // Invalid browser, so display error page.
     $('body').remove();
-    $('html').append('<body><p><img src="../static/Icons/LabelMe.gif" /></p><br /><p>Sorry!  This page only works with Mozilla Firefox, Chrome, and Internet Explorer.  We may support other browsers in the future.</p><p><a href="http://www.mozilla.org">Download Mozilla Firefox?</a></p></body>');
+    $('html').append('<body><p><img src="https://cs17b008.github.io/btp-resources.github.io/static/Icons/LabelMe.gif" /></p><br /><p>Sorry!  This page only works with Mozilla Firefox, Chrome, and Internet Explorer.  We may support other browsers in the future.</p><p><a href="http://www.mozilla.org">Download Mozilla Firefox?</a></p></body>');
   }
 }
 function LoadNewMedia(){
@@ -307,30 +307,30 @@ function InitializeAnnotationTools(tag_button, tag_canvas){
     }
     var html_str = '<div id= "polygonDiv" class="annotatemenu" style="margin-top: 9rem;">Polygon<br></br>Tool \
         <button id="polygon" class="labelBtnDraw" type="button" title="Start Polygon" onclick="SetPolygonDrawingMode(false)" > \
-        <img id="polygonModeImg" src="../static/Icons/polygon.png"  width="28" height="38" /> \
+        <img id="polygonModeImg" src="https://cs17b008.github.io/btp-resources.github.io/static/Icons/polygon.png"  width="28" height="38" /> \
         </button> \
         <button id="erase" class="labelBtnDraw" type="button" title="Delete last segment" onclick="main_handler.EraseSegment()" > \
-        <img src="../static/Icons/erase.png"  width="28" height="38" /> \
+        <img src="https://cs17b008.github.io/btp-resources.github.io/static/Icons/erase.png"  width="28" height="38" /> \
         </button> ';
         if (bbox_mode) html_str += ' <button id="bounding_box" class="labelBtnDraw" type="button" title="Start bounding box" onclick="SetPolygonDrawingMode(true)" > \
-        <img src="../static/Icons/bounding.png"  width="28" height="38" /> \
+        <img src="https://cs17b008.github.io/btp-resources.github.io/static/Icons/bounding.png"  width="28" height="38" /> \
         </button> ';
     html_str += '</div>';
 
     if (!video_mode){
       // html_str += '<div id= "segmDiv" class="annotatemenu">Mask<br></br>Tool \
       //   <button id="ScribbleObj" class="labelBtnDraw" type="button" title="Use the red pencil to mark areas inside the object you want to segment" onclick="scribble_canvas.setCurrentDraw(OBJECT_DRAWING)" > \
-      //   <img src="../static/Icons/object.png" width="28" height="38" /></button> \
+      //   <img src="https://cs17b008.github.io/btp-resources.github.io/static/Icons/object.png" width="28" height="38" /></button> \
       //   <button id="ScribbleBg" class="labelBtnDraw" type="button" title="Use the blue pencil to mark areas outside the object" onclick="scribble_canvas.setCurrentDraw(BG_DRAWING)" > \
-      //   <img src="../static/Icons/background.png" width="28" height="38" /></button> \
+      //   <img src="https://cs17b008.github.io/btp-resources.github.io/static/Icons/background.png" width="28" height="38" /></button> \
       //   <button id="ScribbleRubber" class="labelBtnDraw" type="button" title="ScribbleRubber" onclick="scribble_canvas.setCurrentDraw(RUBBER_DRAWING)" > \
-      //   <img src="../static/Icons/erase.png" width="28" height="38" /> \
+      //   <img src="https://cs17b008.github.io/btp-resources.github.io/static/Icons/erase.png" width="28" height="38" /> \
       //   </button><input type="button" class="segbut"  id="donebtn" value="Done" title="Press this button after you are done with the scribbling." onclick="scribble_canvas.segmentImage(1)"/> \
-      //   <p> </p><div id="loadspinner" style="display: none;"><img src="../static/Icons/segment_loader.gif"/> </div></div>';
+      //   <p> </p><div id="loadspinner" style="display: none;"><img src="https://cs17b008.github.io/btp-resources.github.io/static/Icons/segment_loader.gif"/> </div></div>';
      
 
       // var html_str2 = '<button xmlns="http://www.w3.org/1999/xhtml" id="img_url" class="labelBtn" type="button" title="Download Pack" onclick="javascript:GetPackFile();"> \
-      //     <img src="../static/Icons/download_all.png" height="30" /> \
+      //     <img src="https://cs17b008.github.io/btp-resources.github.io/static/Icons/download_all.png" height="30" /> \
       //     </button>';
 
       // var html_str3 = '<form action="annotationTools/php/getpackfile.php" method="post" id="packform"> \
