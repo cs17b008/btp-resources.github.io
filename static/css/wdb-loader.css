@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-100: #FFF9C4;
+  --color-primary-200: #FFF59D;
+  --color-primary-300: #FFF176;
+  --color-primary-400: #FFEE58;
+  --color-primary-500: #FFEB3B;
+  --color-primary-900: #F57F17;
+  --color-secondary-500: #673AB7;
+  --color-secondary-900: #311B92;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-secondary-500);
+  background-color: #4457C0;
+}
+
+.loader {
+  position: relative;
+  display: block;
+  width: 65px;
+  height: 28px;
+}
+
+.loader::before,
+.loader::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-primary-500);
+  border-radius: 50%;
+  offset-path: path("M23.71 5.21l17.58 17.58a12.43 12.43 0 0 0 17.57 0 12.43 12.43 0 0 0 0-17.57 12.43 12.43 0 0 0-17.57 0L23.71 22.79a12.43 12.43 0 0 1-17.57 0 12.43 12.43 0 0 1 0-17.57 12.43 12.43 0 0 1 17.57-.01z");
+  -webkit-animation: loader 1500ms cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+          animation: loader 1500ms cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+  content: "";
+}
+
+.loader::after {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes loader {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}

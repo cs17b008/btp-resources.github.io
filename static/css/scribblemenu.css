@@ -1,0 +1,50 @@
+
+
+/* THE SCRIBBLE MENU ----------------------------------------------- */
+
+.annotatemenu {
+	position:relative;
+        top:0px;
+	background-color:#fff;
+	border: 2px solid #000;
+	padding:2px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:5px;
+	padding-bottom:5px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	/*height:52px;*/
+        left:1px;
+	margin-bottom:10px;
+	display:block;
+	font-size: x-small;
+	text-align: center;
+
+
+	
+}
+#segmDiv {
+	opacity: 1.;	
+
+}
+#polygonDiv {
+	opacity: 1.;	
+}	
+.segbut{
+	-webkit-appearance: none;
+	text-align: center;
+	font-size: 8px;
+	margin-top: 10px;
+	width: 40px;
+	height: 45px;
+	background-color: rgb(245,245,245);
+}
+
+
+
+
+
+
+
